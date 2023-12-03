@@ -23,6 +23,7 @@ public class AccommodationRepository : IAccommodationRepository
 		if(_context.Accommodations.Count() == 0)
 		{
 			_context.Accommodations.Add(new Accommodation { AccommodationID = 1, Name = "Hotel com vista para o mar", Location = "Avenida Atlantica", Type = "Hotel", PricePerNight = 100.50, Description = "Vista ao mar maravilhosa com quartos luxuosos." });
+            _context.SaveChanges();
 		}
     }
 
